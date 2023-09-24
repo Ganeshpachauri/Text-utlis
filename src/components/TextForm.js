@@ -107,7 +107,7 @@ export default function TextForm(Props) {
             <div className={`contanier text-${Props.mode === 'light' ? 'dark' : 'light'}`}>
                 <h1>{Props.Heading}</h1>
                 <div className="mt-3" >
-                    <textarea className="form-control" style={{ backgroundColor: Props.mode === 'light' ? 'white' : 'grey', color: Props.mode === 'light' ? 'black' : 'white' }} value={text} onChange={handleOnChange} id="mybox" rows="8"></textarea>
+                    <textarea className="form-control" style={{ backgroundColor: Props.mode === 'light' ? 'white' : '#13466e', color: Props.mode === 'light' ? 'black' : 'white' }} value={text} onChange={handleOnChange} id="mybox" rows="8"></textarea>
                     <button className="btn btn-primary mt-2 mx-1" onClick={handleUpClick}>UPPERCASE</button>
                     <button className="btn btn-primary mt-2 mx-1" onClick={handleLoClick}>lowercase</button>
                     <button className="btn btn-primary mt-2 mx-1" onClick={handleClearClick}>Clear Text</button>

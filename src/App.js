@@ -6,7 +6,7 @@ import TextForm from './components/TextForm';
 import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
-  Routes, // Import Routes
+  Routes,
   Route
 } from "react-router-dom";
 
@@ -43,7 +43,7 @@ function App() {
         <Alert alert={alert} />
         <div className="container">
           <Routes>
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About mode={mode}/>} />
             <Route path="/" element={<TextForm Heading="Enter Text To Analyze Below" mode={mode} showAlert={showAlert} />} />
           </Routes>
         </div>
